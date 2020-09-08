@@ -4,14 +4,16 @@ C++ Class Templates
 
 ## Background
 
-Class templates...
+**Class templates** are a C++ construct that gives us the power to specify the data type of the items contained in a data structure in a very generic way. Class templates allow you to define classes that are independent of the type of data stored in the structure.
+
+**Header** (`.h`), or **specification, files** in C++ provide a mechanism to partially separate the design of the class from the implementation in the **source**, or **implementation** (`.cpp`) **file**. The header file must also contain a description of both the data fields for the class and any private methods used by the class. A client does not need to know about the private methods or data fields to use the class in a program. To provide a public interface for an ADT, you can write an abstract base class, thereby separating design from implementation. An abstract base class allows the client to take full advantage of polymorphism when using our class.
 
 ## Objectives
 
 The objectives of this lab are:
 
 1. Understand the fundamental structure and syntax of class template declarations.
-1. Recognize a nuance when working with class templates that have separate interface and implementation files.
+1. Recognize a nuance when working with class templates that have separate specification and implementation files.
 1. Learn how to design and implement an interface in C++.
 
 ## Getting Started
