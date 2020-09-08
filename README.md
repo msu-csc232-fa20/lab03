@@ -86,4 +86,3 @@ If this lab really were graded, the following late penalties would be applied if
 * In the first 24 hour period following the due date, this lab will be penalized 0.75 point meaning the grading starts at 2.25 (out of 3 total possible) points.
 * In the second 24 hour period following the due date, this lab will be penalized 1.50 points meaning the grading starts at 1.5 (out of 3 total possible) points.
 * After 48 hours, the assignment will not be graded and thus earns no points, i.e., 0 out of 3 possible points.
-* 
