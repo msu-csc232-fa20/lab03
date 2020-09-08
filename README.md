@@ -8,6 +8,16 @@ C++ Class Templates
 
 **Header** (`.h`), or **specification, files** in C++ provide a mechanism to partially separate the design of the class from the implementation in the **source**, or **implementation** (`.cpp`) **file**. The header file must also contain a description of both the data fields for the class and any private methods used by the class. A client does not need to know about the private methods or data fields to use the class in a program. To provide a public interface for an ADT, you can write an abstract base class, thereby separating design from implementation. An abstract base class allows the client to take full advantage of polymorphism when using our class.
 
+### A Problem to Solve
+
+Suppose that a friend who is creating a video game asked you to design and develop a group of classes to represent three types of boxes carried by the characters in the game. Each type of box can only hold one item. A character can put an item in the box or look at the item in the box. The three types of boxes are:
+
+* **Plain box**--a plain old box that holds only one item.
+* **Toy box**--a box that has color and holds only one item.
+* **Magic box**--a box that holds only one item, but magically changes it to the first item that was ever stored in the box.
+
+Thus, our ADT needs to provide a way to create these boxes, put something in them, and look at what's in them.
+
 ## Objectives
 
 The objectives of this lab are:
