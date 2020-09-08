@@ -122,7 +122,7 @@ template<typename ItemType>
 class BoxInterface
 {
 public:
-    virtual void setItem( const Item& theItem ) = 0;
+    virtual void setItem( const ItemType& theItem ) = 0;
     virtual ItemType getItem( ) const = 0;
     virtual ~BoxInterface( ) = default;
 }; // end BoxInterface
