@@ -60,16 +60,27 @@ C++ Interlude 1 provides all the context needed to actively engage in today's la
 ### Study Examples
 
 1. Study Box class hierarchy and how instances of these classes are created in [BoxDriver.cpp](src/BoxDriver.cpp)
+1. Compile and execute the Box driver. Once you have successfully done this, create additional types of box objects and explore their other operations. Recompile and observe the output of your updated program. Once that is working correctly, commit your changes with an appropriate commit message. _Make sure you're on your develop branch before you commit any changes_.
 
 ### Creating an Interface
 
-Discuss how C++ doesn't support interfaces, per se.
+C++ does not include the concept of an interface, _per se_ as other languages like Java. Instead, in order to create an interface, one usually creates an abstract class with all public, pure virtual method declarations and a destructor (See List C1-9).
 
-1. Modify `PlainBox` to be a subclass of the abstract class `Box` as described on page 46.
+1. Create a new file in the `src` folder named `BoxInterface.h`.
+1. Type the code presented in C1-9 into this file.
+1. When you have completed this task, stage your new file and commit it:
+
+    ```bash
+    git add src/BoxInterface.h
+    git commit -m"LAB03 - Initial import of Box interface."
+    ```
 
 ### Implementing an Interface
 
-Discuss how this is done in C++.
+Again, since C++ doesn't really support the notion of an "interface," we don't really _implement_ an interface like the way we do in other languages like Java. Instead, we ultimately _extend_ the abstract class that represents our interface.
+
+1. Modify `PlainBox` to be a subclass of the abstract class `Box` as described on page 46.
+1. Recompile and execute the `BoxDriver`. Once you have this working, stage and commit your changes.
 
 ## Submission Details
 
