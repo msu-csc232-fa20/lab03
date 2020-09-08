@@ -10,9 +10,9 @@ Class templates...
 
 The objectives of this lab are:
 
-1. Have fun
-1. Have more fun
-1. And have even more fun
+1. Understand the fundamental structure and syntax of class template declarations.
+1. Recognize a nuance when working with class templates that have separate interface and implementation files.
+1. Learn how to design and implement an interface in C++.
 
 ## Getting Started
 
