@@ -88,7 +88,7 @@ As usual, prior to submitting your assignment to Teams, be sure that you have co
 
 ## Due Date
 
-Your Teams submission is due by 11:59 PM, Friday, September 11, 2020.
+Your Teams submission is due by 11:59 PM, Saturday, September 12, 2020.
 
 ## Grading Rubric
 
