@@ -109,3 +109,31 @@ If this lab really were graded, the following late penalties would be applied if
 * In the first 24 hour period following the due date, this lab will be penalized 0.75 point meaning the grading starts at 2.25 (out of 3 total possible) points.
 * In the second 24 hour period following the due date, this lab will be penalized 1.50 points meaning the grading starts at 1.5 (out of 3 total possible) points.
 * After 48 hours, the assignment will not be graded and thus earns no points, i.e., 0 out of 3 possible points.
+
+---
+
+For those of you who do not have your textbook with you, the contents of Listing C1-9 are presented below:
+
+```c++
+#ifndef BOX_INTERFACE_
+#define BOX_INTERFACE_
+
+template<typename ItemType>
+class BoxInterface
+{
+public:
+    virtual void setItem( const Item& theItem ) = 0;
+    virtual ItemType getItem( ) const = 0;
+    virtual ~BoxInterface( ) = default;
+}; // end BoxInterface
+
+#endif
+```
+
+We can then indicate that our class `PlainBox` is derived from `BoxInterface` by changing its class header to
+
+```c++
+class PlainBox : public BoxInterface<ItemType>
+```
+
+In the future, when we design the public interface for an ADT, we will express that interface as an abstract class. When we introduce pointers in C++ Interlude 2, we will explore the importance and use of abstract classes in depth. Until then, we will use only abstract classes as a design tool for our ADTs.
