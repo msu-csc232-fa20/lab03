@@ -1,3 +1,13 @@
+/**
+ * CSC232 - Data Structures.
+ * Missouri State University, Fall 2020.
+ * 
+ * @brief   Box hierarchy driver.
+ * @file    BoxDriver.cpp
+ * @authors Carrano & Henry
+ *          Jim Daehn <jdaehn@missouristate.edu>
+ */
+
 #include <cstdlib>
 #include <iostream>
 #include <string>
