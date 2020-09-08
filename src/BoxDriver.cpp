@@ -3,6 +3,7 @@
 #include <string>
 #include "PlainBox.h"
 #include "ToyBox.h"
+#include "MagicBox.h"
 
 int main()
 {
@@ -19,6 +20,11 @@ int main()
 
     ToyBox<std::string> myToyCase{ "Jack-in-the-Box", RED };
     std::cout << "myToyCase.getItem( ) = " << myToyCase.getItem( ) << std::endl;
+
+    MagicBox<int> magicNumberBox{47};
+    std::cout << "magicNumberBox.getItem( ) = " << magicNumberBox.getItem( ) << std::endl;
+    magicNumberBox.setItem( 53 );
+    std::cout << "magicNumberBox.getItem( ) = " << magicNumberBox.getItem( ) << std::endl;
 
     return EXIT_SUCCESS;
 }

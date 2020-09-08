@@ -13,12 +13,30 @@
 
 #include "PlainBox.h"
 
+/**
+ * @brief a box that holds only one item, but magically changes it to the 
+ * first item that was ever stored in the box.
+ * @tparam ItemType the data type of the item stored in this box.
+ */
 template<typename ItemType>
 class MagicBox : public PlainBox<ItemType>
 {
 public:
-    MagicBox();
+    /**
+     * Default constructor.
+     */
+    MagicBox( );
+
+    /**
+     * Initializing constructor.
+     * @param theItem the item this box shall contain
+     */
     MagicBox( const ItemType& theItem );
+
+    /**
+     * Item mutator.
+     * @param theItem a new item this box shall contain
+     */
     void setItem( const ItemType& theItem );
 private:
     bool firstItemStored;

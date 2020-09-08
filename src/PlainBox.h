@@ -11,7 +11,11 @@
 #ifndef PLAIN_BOX_
 #define PLAIN_BOX_
 
-template<typename ItemType>
+/**
+ * @brief A plain old box that holds only one item.
+ * @tparam ItemType the data type of the item stored in this box.
+ */
+template<typename ItemType> // Indicates this is a template definition
 class PlainBox
 {
 public:
